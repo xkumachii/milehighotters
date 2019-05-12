@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name" translatable="false">Mile High Otters</string>
+    <string name="username" translatable="false">username</string>
+    <string name="password" translatable="false">password</string>
+    <string name="log_in" translatable="false">Log In</string>
+    <string name="create_account">Create Account</string>
+    <string name="confirm_password" translatable="false">confirm password</string>
+    <string name="reserve_seat" translatable="false">Reserve Seat</string>
+    <string name="cancel_reservation" translatable="false">Cancel Reservation</string>
+    <string name="log_out" translatable="false">Log Out</string>
+    <string name="manage_flights">Manage Flights</string>
+    <string name="view_logs">View Logs</string>
+    <string name="departure">departure</string>
+    <string name="arrival">arrival</string>
+    <string name="search">Search</string>
+</resources>
