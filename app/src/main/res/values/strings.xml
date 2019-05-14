@@ -10,7 +10,12 @@
     <string name="log_out" translatable="false">Log Out</string>
     <string name="manage_flights">Manage Flights</string>
     <string name="view_logs">View Logs</string>
-    <string name="departure">departure</string>
-    <string name="arrival">arrival</string>
     <string name="search">Search</string>
+    <string name="add_flight">Add Flight</string>
+    <string name="departure_time">departure time</string>
+    <string name="capacity">capacity</string>
+    <string name="arrival">arrival</string>
+    <string name="price">price</string>
+    <string name="departure">departure</string>
+    <string name="flight_number">flight number</string>
 </resources>

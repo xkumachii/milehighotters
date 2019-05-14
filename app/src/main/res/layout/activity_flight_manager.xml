@@ -7,19 +7,86 @@
     tools:context=".FlightManager">
 
     <Button
-        android:id="@+id/add"
+        android:id="@+id/addFlight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Flight"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="491dp" />
+        android:layout_marginTop="51dp"
+        android:text="@string/add_flight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flightPrice" />
 
-    <Button
-        android:id="@+id/delete"
+    <EditText
+        android:id="@+id/departTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Remove Flight"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="579dp" />
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="@string/departure_time"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="@+id/arrival"
+        app:layout_constraintTop_toBottomOf="@+id/arrival"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/flightNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:hint="@string/flight_number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/departure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/departure"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/flightNum"
+        app:layout_constraintTop_toBottomOf="@+id/flightNum"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/flightPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/price"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/flightCapacity"
+        app:layout_constraintTop_toBottomOf="@+id/flightCapacity"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/arrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="@string/arrival"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/departure"
+        app:layout_constraintTop_toBottomOf="@+id/departure"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/flightCapacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="@string/capacity"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/departTime"
+        app:layout_constraintTop_toBottomOf="@+id/departTime"
+        android:importantForAutofill="no" />
 
 </android.support.constraint.ConstraintLayout>
