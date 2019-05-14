@@ -40,6 +40,10 @@ public class Flight {
         return mFlightHelper.getFlight(num);
     }
 
+    public List<FlightItem> getFlights() {
+        return mFlightHelper.getFlights();
+    }
+
     public List<FlightItem> getCertainFlightInstances(String departure, String arrival) {
         return mFlightHelper.getCertainFlightInstances(departure, arrival);
     }

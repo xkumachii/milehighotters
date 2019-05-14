@@ -1,5 +1,6 @@
 package com.example.milehighotters;
 
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.UUID;
 
@@ -97,4 +98,19 @@ public class FlightItem {
     }
 
     //todo: implement tostring for listing flites.
+
+    @Override
+    public String toString() {
+        DecimalFormat priceDisplay = new DecimalFormat("0.00");
+        StringBuilder sb = new StringBuilder();
+        sb.append(getDeparture());
+        sb.append(" -> ");
+        sb.append(getArrival());
+        sb.append(" @ ");
+
+        sb.append(": $" + priceDisplay.format(getPrice()));
+
+        String display = sb.toString();
+        return display;
+    }
 }
